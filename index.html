@@ -1,0 +1,439 @@
+<!--
+  Professionally styled Loops Dashboard in GFG (GeeksforGeeks) green color scheme, educational layout.
+  Everything else works and is interactive as before.
+-->
+<!-- GFG FONTS & BACKGROUND -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:700,900&display=swap" rel="stylesheet">
+
+<div id="gfg-loops" style="padding:0;margin:0;min-height:100vh;background:#f7fff7;font-family:'Nunito',Segoe UI,sans-serif;">
+  <!-- DASHBOARD HEADING -->
+  <header style="background: linear-gradient(90deg, #059862 60%, #01674b 100%); color:#fff; padding: 44px 0 34px 0; box-shadow: 0 4px 18px 0 rgba(0,90,50,0.07);">
+    <div style="text-align:center;">
+      <div style="font-size:1.28rem; font-weight:700; color:#f2ffb8; margin-bottom:10px;">
+        Python Series  Week: 4
+      </div>
+      <h1 style="font-size:2.5rem; font-weight:900; text-align:center; letter-spacing:1px; margin-bottom:15px;">🔁 Loops Study Dashboard</h1>
+      <p style="max-width:600px; margin:0 auto; text-align:center; font-size:1.1rem; font-weight:500; color:#d9ffeb;">
+        🚀 <span style="color:#f2ffb8;">Loops</span> help us repeat tasks efficiently, reduce code, and power up logic. <span style="color:#f2ffb8;font-weight:700">Interactive learning</span> below!
+      </p>
+    </div>
+  </header>
+
+  <!-- Content Main Grid -->
+  <main class="dashboard-grid" style="display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(325px,1fr));max-width:1200px;width:96%;margin:38px auto 0;">
+    <!-- Card 1: What Are Loops -->
+    <section 
+      class="box"
+      style="background:#fff;border-left:7px solid #18b870;box-shadow:0 3px 18px 0 rgba(10,50,35,0.08);border-radius:13px;padding:30px 24px 26px;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;transition:box-shadow .2s,transform .13s;"
+      data-title="What Are Loops?" 
+      data-content='
+      <p style="margin-bottom:13px;"><b style=&quot;color:#18b870;&quot;>Loops</b> 🔁 let us execute code <b style=&quot;color:#125f3e;&quot;>multiple times</b> without copy-paste. They save time, effort, and make logic elegant.</p>
+      <p style="margin-bottom:13px;">Use them for <b>repetitive work</b> like traversing lists, printing patterns, calculations, etc. 📝</p>
+      <div style="margin:16px 0; padding:17px 15px; border-radius:9px; background:#e7ffe7;">
+        <h3 style="font-weight:bold; margin-bottom:7px;">🧑‍🏫 Analogy</h3>
+        <em>“I will practice coding” 10 times:</em>
+        <ul style="margin: 9px 0 0 17px; color:#1a6c42;">
+          <li>Write it 10x, <span style="color:#ebba34;">or</span></li>
+          <li>Say: <b>Repeat this sentence 10 times</b> and stop.</li>
+        </ul>
+        <div style="margin-top:8px;font-size:0.96em;">
+          ➡️ Loops <span style="font-weight:600;">repeat</span> code till a <b>condition</b> is false ♾️.
+        </div>
+      </div>'
+    >
+      <div>
+        <span style="font-size:3.5rem;display:block;margin-bottom:5px;">🔄</span>
+        <h2 style="color:#065e37; font-size:1.45rem; font-weight:900;margin-bottom:8px;">What Are Loops?</h2>
+        <p style="color:#257d50">Repeat code efficiently.<span class="hidden sm:inline"> Tap for more.</span></p>
+      </div>
+    </section>
+
+    <!-- Card 2: for Loop -->
+    <section 
+      class="box"
+      style="background:#fff; border-left:7px solid #27967a; box-shadow:0 3px 18px 0 rgba(10,50,35,0.08); border-radius:13px; padding:30px 24px 26px; display:flex; flex-direction:column;align-items:center;justify-content:center;cursor:pointer;"
+      data-title="for Loop"
+      data-content='
+      <p style="margin-bottom:13px;"><b style="color:#27967a;">for loop</b> 🔢: Use when you <b style="color:#15694e">know how many times</b> to repeat.</p>
+      <div style="margin-bottom:10px;">
+        <span style="font-weight:700; font-size:0.95em;color:#248357;">Python Syntax</span>
+        <pre style="background:#f8fff8;border-radius:6px;padding:10px 13px;margin:5px 0 0 0;"><code>for variable in range(start, stop, step):
+    # body</code></pre>
+      </div>
+      <ul style="font-size:0.99em;margin:10px 0 0 0;list-style-type:square;padding-left:13px;">
+        <li>
+          <b>Example:</b>
+          <pre style="background:#f9fff9;border-radius:6px;padding:6px 10px;font-size:0.96em;">for i in range(1, 6):
+    print(i, end=" ")</pre>
+          <span style="color:#25a849;">Output:</span> <code>1 2 3 4 5</code> 🎉
+        </li>
+        <li style="margin-top:8px;">
+          <b>Sum 1 to n:</b>
+          <pre style="background:#f9fff9;border-radius:6px;padding:6px 10px;font-size:0.95em;">total = 0
+for i in range(1, n+1):
+    total += i</pre>
+        </li>
+      </ul>
+      '
+    >
+      <div>
+        <span style="font-size:3.2rem;display:block;margin-bottom:5px;color:#16be6c;">🔟</span>
+        <h2 style="color:#188d47; font-size:1.3rem; font-weight:900;margin-bottom:6px;">for Loop</h2>
+        <p style="color:#227c47">Counted repetition.<span class="hidden sm:inline"> Examples &rarr;</span></p>
+      </div>
+    </section>
+
+    <!-- Card 3: while Loop -->
+    <section 
+      class="box"
+      style="background:#fff; border-left:7px solid #1f8e13; box-shadow:0 3px 18px 0 rgba(10,50,35,0.08); border-radius:13px; padding:30px 24px 26px; display:flex; flex-direction:column;align-items:center;justify-content:center;cursor:pointer;"
+      data-title="while Loop"
+      data-content='
+      <p style="margin-bottom:13px;"><b style="color:#176834;">while loop</b> ⏳: Use when number of repeats is <b style="color:#388b49;">unknown</b>, but you know the <b>condition</b> to continue.</p>
+      <div style="margin-bottom:11px;">
+        <span style="font-weight:700; font-size:0.95em;color:#228c25;">Python Syntax</span>
+        <pre style="background:#f7ffeb;border-radius:6px;padding:10px 13px;margin:6px 0 0 0;"><code>while condition:
+    # body</code></pre>
+      </div>
+      <ul style="font-size:0.99em;margin:10px 0 0 0;list-style-type:square;padding-left:13px;">
+        <li>
+          <b>Example:</b>
+          <pre style="background:#f9fff9;border-radius:6px;padding:6px 10px;font-size:0.96em;">i = 1
+while i &lt;= 5:
+    print(i, end=" ")
+    i += 1</pre>
+          <span style="color:#23a532;">Output:</span> <code>1 2 3 4 5</code>
+        </li>
+        <li style="margin-top:8px;">
+          <b>Input until zero:</b>
+          <pre style="background:#f9fff9;border-radius:6px;padding:6px 10px;font-size:0.95em;">x = int(input())
+while x != 0:
+    print(x)
+    x = int(input())</pre>
+        </li>
+      </ul>
+      <div style="font-size:0.88em; color:#269939; margin-top:9px;">
+        (Condition is checked <b>before</b> each run.)
+      </div>
+      '
+    >
+      <div>
+        <span style="font-size:3.2rem;display:block;margin-bottom:5px;color:#20b342;">♾️</span>
+        <h2 style="color:#1b803a; font-size:1.25rem; font-weight:900;margin-bottom:6px;">while Loop</h2>
+        <p style="color:#217a47">Repeat as long as...<span class="hidden sm:inline"> View more</span></p>
+      </div>
+    </section>
+
+    <!-- Card 4: do-while Loop -->
+    <section 
+      class="box"
+      style="background:#fff; border-left:7px solid #8bcf26; box-shadow:0 3px 18px 0 rgba(10,50,35,0.08); border-radius:13px; padding:30px 24px 26px; display:flex; flex-direction:column;align-items:center;justify-content:center;cursor:pointer;"
+      data-title="do-while Loop"
+      data-content='
+      <p style="margin-bottom:13px;"><b style="color:#7ea523;">do-while loop</b>: Not native in Python, but can be <b>simulated</b>. Always runs at least <b>once!</b></p>
+      <div style="margin-bottom:9px;">
+        <span style="font-weight:700; font-size:0.95em;color:#68a310;">Simulated Syntax (Python)</span>
+        <pre style="background:#f7fff8;border-radius:6px;padding:10px 13px;margin:6px 0 0 0;"><code>while True:
+    # body
+    if not condition:
+        break</code></pre>
+      </div>
+      <ul style="font-size:0.99em;margin:10px 0 0 0;list-style-type:square;padding-left:13px;">
+        <li>
+          <b>Example:</b>
+          <pre style="background:#f9fff9;border-radius:6px;padding:6px 10px;font-size:0.96em;">i = 1
+while True:
+    print(i)
+    i += 1
+    if i &gt; 5:
+        break</pre>
+        </li>
+      </ul>
+      <div style="font-size:0.89em; color:#9cbc32; margin-top:9px;">
+        Used for menus, must-run loops, etc. 🎲
+      </div>
+      '
+    >
+      <div>
+        <span style="font-size:2.7rem;display:block;margin-bottom:5px;color:#b0d40c;">🕹️</span>
+        <h2 style="color:#8fc314; font-size:1.15rem; font-weight:900;margin-bottom:6px;">do-while Loop</h2>
+        <p style="color:#679f0a">Repeat & check at end.<span class="hidden sm:inline"> See logic</span></p>
+      </div>
+    </section>
+
+    <!-- Card 5: Practice Zone (Loops MCQs) -->
+    <section 
+      class="box col-span-2"
+      style="background:#fcfff7; border-left:7px solid #31855f; box-shadow:0 5px 18px 0 rgba(11,67,26,.08); border-radius:13px; padding:30px 24px 24px;display:flex; flex-direction:column;align-items:center;justify-content:center;cursor:pointer;"
+      data-title="Practice Zone: Loops MCQs"
+      data-content='
+      <p style="margin-bottom:13px;font-size:1.07em;color:#21895e;">Test your understanding of loops! <b>Click the correct answer:</b></p>
+      <div style="display:grid;gap:10px;">
+        <div style="border-radius:7px;background:#edfff4;padding:14px 10px 9px 14px;margin-bottom:5px;">
+          <div style="font-weight:700;margin-bottom:5px;color:#2c774f;">Q1. How many times will this loop run?</div>
+          <pre style="background:#e6ffe8;padding:8px 7px;border-radius:6px;font-size:0.95em;margin:0 0 4px 0;"><code>for i in range(5):
+    # some code</code></pre>
+          <div style="display:flex;flex-wrap:wrap;gap:8px 12px;">
+            <button class="quiz-mcq-btn" data-question="Q1" data-is="false" style="background:#d0f5e2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#10673b;cursor:pointer;">a) 4 times</button>
+            <button class="quiz-mcq-btn" data-question="Q1" data-is="true"  style="background:#d0f5e2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#10673b;cursor:pointer;">b) 5 times</button>
+            <button class="quiz-mcq-btn" data-question="Q1" data-is="false" style="background:#d0f5e2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#10673b;cursor:pointer;">c) 6 times</button>
+            <button class="quiz-mcq-btn" data-question="Q1" data-is="false" style="background:#d0f5e2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#10673b;cursor:pointer;">d) Infinite</button>
+          </div>
+        </div>
+        <div style="border-radius:7px;background:#edfff4;padding:14px 10px 9px 14px;margin-bottom:5px;">
+          <div style="font-weight:700;margin-bottom:5px;color:#2c774f;">Q2. Which part updates the loop variable?</div>
+          <pre style="background:#e6ffe8;padding:8px 7px;border-radius:6px;font-size:0.95em;margin:0 0 4px 0;"><code>for variable in range(start, stop, step):
+    # body</code></pre>
+          <div style="display:flex;flex-wrap:wrap;gap:8px 12px;">
+            <button class="quiz-mcq-btn" data-question="Q2" data-is="true"  style="background:#d0f5e2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#10673b;cursor:pointer;">a) step parameter in range()</button>
+            <button class="quiz-mcq-btn" data-question="Q2" data-is="false" style="background:#d0f5e2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#10673b;cursor:pointer;">b) condition</button>
+            <button class="quiz-mcq-btn" data-question="Q2" data-is="false" style="background:#d0f5e2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#10673b;cursor:pointer;">c) start</button>
+            <button class="quiz-mcq-btn" data-question="Q2" data-is="false" style="background:#d0f5e2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#10673b;cursor:pointer;">d) body</button>
+          </div>
+        </div>
+        <div style="border-radius:7px;background:#ffffff;padding:14px 10px 9px 14px;">
+          <div style="font-weight:700;margin-bottom:5px;color:#246c4d;">Q3. When is the <b>while</b> condition checked?</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px 12px;">
+            <button class="quiz-mcq-btn" data-question="Q3" data-is="false" style="background:#ebfadf;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#266924;cursor:pointer;">a) After the loop</button>
+            <button class="quiz-mcq-btn" data-question="Q3" data-is="false" style="background:#ebfadf;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#266924;cursor:pointer;">b) In the middle</button>
+            <button class="quiz-mcq-btn" data-question="Q3" data-is="true"  style="background:#ebfadf;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#266924;cursor:pointer;">c) Before every iteration</button>
+            <button class="quiz-mcq-btn" data-question="Q3" data-is="false" style="background:#ebfadf;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#266924;cursor:pointer;">d) Never</button>
+          </div>
+        </div>
+        <!-- New MCQ 1 -->
+        <div style="border-radius:7px;background:#effffd;padding:14px 10px 9px 14px;margin-bottom:5px;">
+          <div style="font-weight:700;margin-bottom:5px;color:#1a8666;">Q4. What will be the output?</div>
+          <pre style="background:#e3fffa;padding:8px 7px;border-radius:6px;font-size:0.95em;margin:0 0 4px 0;"><code>count = 0
+while count &lt; 3:
+    print(count)
+    count += 1</code></pre>
+          <div style="display:flex;flex-wrap:wrap;gap:8px 12px;">
+            <button class="quiz-mcq-btn" data-question="Q4" data-is="true" style="background:#defef5;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#148064;cursor:pointer;">a) 0 1 2</button>
+            <button class="quiz-mcq-btn" data-question="Q4" data-is="false" style="background:#defef5;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#148064;cursor:pointer;">b) 1 2 3</button>
+            <button class="quiz-mcq-btn" data-question="Q4" data-is="false" style="background:#defef5;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#148064;cursor:pointer;">c) 0 1 2 3</button>
+            <button class="quiz-mcq-btn" data-question="Q4" data-is="false" style="background:#defef5;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#148064;cursor:pointer;">d) 1 2</button>
+          </div>
+        </div>
+        <!-- New MCQ 2 -->
+        <div style="border-radius:7px;background:#fffbed;padding:14px 10px 9px 14px;margin-bottom:5px;">
+          <div style="font-weight:700;margin-bottom:5px;color:#b58423;">Q5. Choose the TRUE statement about Python loops:</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px 12px;">
+            <button class="quiz-mcq-btn" data-question="Q5" data-is="false" style="background:#fff5d3;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#ad931a;cursor:pointer;">a) Only for loops exist in Python</button>
+            <button class="quiz-mcq-btn" data-question="Q5" data-is="true"  style="background:#fff5d3;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#ad931a;cursor:pointer;">b) Both for and while loops exist in Python</button>
+            <button class="quiz-mcq-btn" data-question="Q5" data-is="false" style="background:#fff5d3;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#ad931a;cursor:pointer;">c) Python supports switch-case for looping</button>
+            <button class="quiz-mcq-btn" data-question="Q5" data-is="false" style="background:#fff5d3;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#ad931a;cursor:pointer;">d) Do-while is the only native loop in Python</button>
+          </div>
+        </div>
+        <!-- New MCQ 3 -->
+        <div style="border-radius:7px;background:#f7edff;padding:14px 10px 9px 14px;margin-bottom:5px;">
+          <div style="font-weight:700;margin-bottom:5px;color:#6721a9;">Q6. What keyword is used to exit a loop early?</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px 12px;">
+            <button class="quiz-mcq-btn" data-question="Q6" data-is="false" style="background:#eddfff;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#5c219f;cursor:pointer;">a) skip</button>
+            <button class="quiz-mcq-btn" data-question="Q6" data-is="true"  style="background:#eddfff;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#5c219f;cursor:pointer;">b) break</button>
+            <button class="quiz-mcq-btn" data-question="Q6" data-is="false" style="background:#eddfff;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#5c219f;cursor:pointer;">c) continue</button>
+            <button class="quiz-mcq-btn" data-question="Q6" data-is="false" style="background:#eddfff;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#5c219f;cursor:pointer;">d) exitloop</button>
+          </div>
+        </div>
+        <!-- New MCQ 4 -->
+        <div style="border-radius:7px;background:#ffeff6;padding:14px 10px 9px 14px;margin-bottom:5px;">
+          <div style="font-weight:700;margin-bottom:5px;color:#a13476;">Q7. What does <code>continue</code> do in a loop?</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px 12px;">
+            <button class="quiz-mcq-btn" data-question="Q7" data-is="false" style="background:#ffdff2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#a13476;cursor:pointer;">a) Exits the loop</button>
+            <button class="quiz-mcq-btn" data-question="Q7" data-is="true"  style="background:#ffdff2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#a13476;cursor:pointer;">b) Skips to next iteration</button>
+            <button class="quiz-mcq-btn" data-question="Q7" data-is="false" style="background:#ffdff2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#a13476;cursor:pointer;">c) Continues infinite loop</button>
+            <button class="quiz-mcq-btn" data-question="Q7" data-is="false" style="background:#ffdff2;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#a13476;cursor:pointer;">d) Restarts script</button>
+          </div>
+        </div>
+        <!-- New MCQ 5 -->
+        <div style="border-radius:7px;background:#f9fff9;padding:14px 10px 9px 14px;margin-bottom:5px;">
+          <div style="font-weight:700;margin-bottom:5px;color:#187a28;">Q8. Which will create an infinite loop?</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px 12px;">
+            <button class="quiz-mcq-btn" data-question="Q8" data-is="false" style="background:#e0ffe0;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#1c6121;cursor:pointer;">a) for i in range(1, 5):</button>
+            <button class="quiz-mcq-btn" data-question="Q8" data-is="true"  style="background:#e0ffe0;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#1c6121;cursor:pointer;">b) while True:</button>
+            <button class="quiz-mcq-btn" data-question="Q8" data-is="false" style="background:#e0ffe0;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#1c6121;cursor:pointer;">c) for x in []:</button>
+            <button class="quiz-mcq-btn" data-question="Q8" data-is="false" style="background:#e0ffe0;border:none;border-radius:4px;padding:4px 13px;margin:2px;font-weight:600;color:#1c6121;cursor:pointer;">d) for i in range(10):</button>
+          </div>
+        </div>
+      </div>
+      '
+    >
+      <div>
+        <span style="font-size:2.1rem;display:block;margin-bottom:7px;color:#30bb80;">📝</span>
+        <h2 style="color:#2e7d45; font-size:1.10rem; font-weight:900;margin-bottom:6px;">Practice Zone 🎯</h2>
+        <p style="color:#448857">MCQs: test yourself! <span class="hidden sm:inline">Click to try.</span></p>
+      </div>
+    </section>
+
+    <!-- Card 6: Loop Guessing Game -->
+    <section 
+      class="box col-span-2"
+      style="background:#f6ffef; border-left:7px solid #41af45; box-shadow:0 5px 18px 0 rgba(56,128,52,0.12); border-radius:13px; padding:30px 24px 24px;display:flex; flex-direction:column;align-items:center;justify-content:center;cursor:pointer;"
+      data-title="Loop Guessing Game"
+      data-content='
+        <div>
+          <h3 style="font-weight:800;margin-bottom:8px;color:#10773c;">🎮 Guess: How many times did the loop run?</h3>
+          <p style="margin-bottom:11px;font-size:0.97em;">The computer picks a secret number (1&ndash;10) and runs a <b>for</b> loop that many times. Can you guess it?</p>
+          <form id="mini-loop-guess-form" style="display:flex; gap:12px;justify-content:center;align-items:center;margin-bottom:11px;">
+            <label for="mini-loop-guess" style="font-weight:700;color:#1d7c3c;">Your guess:</label>
+            <input type="number" min="1" max="10" id="mini-loop-guess" style="border:1.7px solid #80e1b5; padding:3px 8px;width:42px;border-radius:5px;" />
+            <button type="submit" style="background:#25b97e;color:#fff;padding:5px 13px;border:none;border-radius:5px;font-weight:700;">Check</button>
+          </form>
+          <div id="mini-loop-guess-result" style="font-weight:700;"></div>
+          <details class="mt-3">
+            <summary style="cursor:pointer;font-size:0.97em;color:#239b69;font-weight:700;">View Python logic</summary>
+            <pre style="background:#e8ffe8;border-radius:6px;padding:10px 10px;font-size:0.95em;margin-top:7px;"><code>import random
+secret = random.randint(1, 10)
+for i in range(secret):
+    pass
+guess = int(input("Your guess: "))
+if guess == secret:
+    print("Correct!")
+elif guess &lt; secret:
+    print("Too low!")
+else:
+    print("Too high!")</code></pre>
+          </details>
+        </div>
+      '
+    >
+      <div>
+        <span style="font-size:2.1rem;display:block;margin-bottom:6px;color:#35b54c;">🎲</span>
+        <h2 style="color:#3ba13b; font-size:1.10rem; font-weight:900;margin-bottom:6px;">Loop Guessing Game 🎮</h2>
+        <p style="color:#217c33">Fun: Try your logic! <span class="hidden sm:inline">Play now.</span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL/STANDALONE INFO PANE  -->
+  <div id="loopsInfoModal" class="modal-overlay hidden" style="position:fixed;inset:0;background:rgba(20,120,60,0.20);display:flex;align-items:center;justify-content:center;z-index:222;">
+    <div class="modal-content" style="background:#fff; border-radius:15px; box-shadow:0 12px 40px 0 rgba(24,120,80,0.17); padding:40px 30px 30px; position:relative;max-width:500px;width:96%;transform: translateY(-34px);transition:transform .24s;">
+      <button id="loops-modal-close" style="position:absolute;top:14px;right:14px;background:none;border:none;color:#66bb88;font-size:1.7rem;font-weight:900;cursor:pointer;line-height:1;">&times;</button>
+      <h2 id="loops-modal-title" style="font-size:1.5rem; font-weight:900; margin-bottom:15px; color:#05773b;"></h2>
+      <div id="loops-modal-body"></div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer style="text-align:center; padding:28px 5px 18px 5px; color:#06602e; font-weight:700; font-size:1.1rem; letter-spacing:1px;">
+    GFG Community X AI/ML Club
+  </footer>
+</div>
+
+<style>
+  .modal-overlay { opacity:0; pointer-events:none; transition:opacity 0.32s; }
+  .modal-overlay.open { opacity:1; pointer-events:auto; }
+  .dashboard-grid {margin-bottom:3.5rem;}
+  .box:hover { box-shadow: 0 10px 28px 0 rgba(14,90,37,0.16); transform:scale(1.035);}
+  @media (max-width: 900px) {.dashboard-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width: 650px) {.dashboard-grid{grid-template-columns:1fr;}}
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // MODAL logic
+    const modal = document.getElementById('loopsInfoModal');
+    const modalTitle = document.getElementById('loops-modal-title');
+    const modalBody = document.getElementById('loops-modal-body');
+    const modalClose = document.getElementById('loops-modal-close');
+    document.querySelectorAll('.box').forEach(card => {
+      card.addEventListener('click', function () {
+        modalTitle.innerHTML = this.getAttribute('data-title');
+        modalBody.innerHTML = this.getAttribute('data-content');
+        modal.classList.add('open');
+        modal.classList.remove('hidden');
+        // MCQ answer logic (highlights answers live)
+        if (modalTitle.innerText.startsWith('Practice Zone')) {
+          // Reset all answer buttons
+          Array.from(modalBody.querySelectorAll(".quiz-mcq-btn")).forEach(btn => {
+            btn.style.background = '';
+            btn.style.color = '';
+          });
+          // Map of explanations, key matches data-question (Q1, Q2, ...)
+          const explanations = {
+            Q1: "The loop runs for values i=0 to 4, i.e., 5 times.",
+            Q2: "The step value in range() increases/decreases the loop variable each time.",
+            Q3: "The condition of a while loop is checked before every iteration.",
+            Q4: "count starts at 0, increases to 1, then 2. The loop prints 0, 1, 2, then stops.",
+            Q5: "Python supports both for and while loops.",
+            Q6: "The break keyword exits a loop early.",
+            Q7: "The continue statement skips the rest of current iteration and continues with next.",
+            Q8: "<code>while True:</code> will run endlessly unless a break is used inside."
+          };
+          // Add a feedback area for each MCQ if not present
+          Array.from(modalBody.querySelectorAll('.quiz-mcq-btn')).forEach(btn=>{
+            let parent = btn.parentElement;
+            if(!parent.querySelector('.mcq-feedback')) {
+              let feedback = document.createElement('div');
+              feedback.className = 'mcq-feedback';
+              feedback.style.marginTop = '6px';
+              feedback.style.fontWeight = 'bold';
+              feedback.style.fontSize = '0.98em';
+              parent.appendChild(feedback);
+            }
+          });
+          // Attach click event
+          Array.from(modalBody.querySelectorAll(".quiz-mcq-btn")).forEach(btn => {
+            btn.onclick = function(e){
+              e.preventDefault();
+              let parent = this.parentElement;
+              // Reset all
+              Array.from(parent.querySelectorAll('.quiz-mcq-btn')).forEach(btn2=>{
+                btn2.style.background='';
+                btn2.style.color='';
+              });
+              // Feedback node
+              let feedback = parent.querySelector('.mcq-feedback');
+              // Result
+              if(this.getAttribute('data-is') === "true") {
+                this.style.background = '#4ae562';
+                this.style.color='#0e3030';
+                feedback.innerHTML = "🎉 Correct!<br><span style='font-weight:400;'>"+(explanations[this.dataset.question]||'')+"</span>";
+                feedback.style.color = '#078432';
+              } else {
+                this.style.background = '#ffeded';
+                this.style.color='#ba0d1b';
+                feedback.innerHTML = "❌ Wrong!<br><span style='font-weight:400;'>"+(explanations[this.dataset.question]||'')+"</span>";
+                feedback.style.color = '#ba0d1b';
+              }
+            };
+          });
+        }
+        // Guess game
+        if (modalTitle.innerText.indexOf('Guessing Game') !== -1) {
+          let secret = Math.floor(Math.random()*10)+1;
+          const form = modalBody.querySelector('#mini-loop-guess-form');
+          const result = modalBody.querySelector('#mini-loop-guess-result');
+          form.onsubmit = function(ev){
+            ev.preventDefault();
+            const guess = Number(form.querySelector('input').value);
+            if (!guess || guess < 1 || guess > 10) {
+              result.innerText = "Please enter a number 1–10";
+              result.style.color = "#c71e23";
+              return;
+            }
+            if (guess === secret) {
+              result.innerText = "✅ Correct!";
+              result.style.color = "#12973a";
+            }
+            else if (guess < secret) {
+              result.innerText = "⬇️ Too low!";
+              result.style.color = "#1b86d4";
+            }
+            else {
+              result.innerText = "⬆️ Too high!";
+              result.style.color = "#be7908";
+            }
+          };
+        }
+      });
+    });
+    function closeModal() {
+      modal.classList.remove('open');
+      setTimeout(()=>{ modal.classList.add('hidden'); }, 230);
+    }
+    modalClose.onclick = closeModal;
+    modal.addEventListener('click', function(e){
+      if (e.target === modal) closeModal();
+    });
+  });
+</script>
